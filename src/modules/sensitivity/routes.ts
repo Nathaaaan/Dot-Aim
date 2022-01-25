@@ -21,7 +21,7 @@ export default function inventoryHandler(server, options, next) {
         "/sensitivity",
         { schema: postSensitivitySchema },
         async (req, res) => {
-            const {value, name} = req.body
+            const {value, playerName} = req.body
             /*const { quantity, product_id } = req.body
             if (!product_id) {
                 req.log.info(`product not found: ${product_id}`)
@@ -39,7 +39,7 @@ export default function inventoryHandler(server, options, next) {
             req.log.info(`save sensitivity to db`)
             const sensitivity = await server.db.sensitivity.save({
                 value,
-                name,
+                playerName,
             })
 
             res.code(201).send(sensitivity)

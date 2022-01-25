@@ -1,7 +1,7 @@
 const sensitivitySchema = {
     id: { type: "string", format: "uuid" },
     value: { type: "number"},
-    name: { type: "string"},
+    playerName: { type: "string"},
 }
 
 export const listSensitivitySchema = {
