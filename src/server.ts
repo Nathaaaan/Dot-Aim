@@ -8,6 +8,7 @@ import db from "./plugins/db"
 //import inventoryHandler from "./modules/inventory/routes"
 import sensitivityHandler from "./modules/sensitivity/routes"
 
+//Docs and servers
 function createServer() {
     const server = fastify({ logger: { prettyPrint: true } })
     //server.use(cors())
@@ -52,7 +53,7 @@ function createServer() {
     })
 
     /*
-    generate temporary token to be used in app
+    Code that generate a token
     server.ready(() => {
       const token = server.jwt.sign({ user_id: 'swr_user_id' })
       console.log(token)

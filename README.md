@@ -1,2 +1,3 @@
 # Dot-Aim
-Ce repo correspond au projet du cours Event-driven Asynchronous Programming (ST2EAP) en M2.
+
+docker run -p 12321:5432 --name pgdbcloud -e POSTGRES_PASSWORD=natix123 -d postgres
